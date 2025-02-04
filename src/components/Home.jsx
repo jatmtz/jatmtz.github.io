@@ -1,5 +1,5 @@
 import { FaFacebook, FaInstagram, FaPhone, FaMapMarkerAlt } from 'react-icons/fa';
-import logo from '../assets/logo_slogan.png';
+import logo from '../assets/logo_slogan.webp';
 
 const Home = () => {
     const styles = {
