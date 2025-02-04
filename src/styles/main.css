@@ -1,0 +1,46 @@
+/* src/styles/main.css */
+
+:root {
+    --color-gold: #d4af37;
+    --color-black: #000;
+    --color-brown: #4b2e2e;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+
+    /* Imagen de fondo */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), 
+                      url('../assets/fondo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: var(--color-gold);
+}
+
+
+h1 {
+    font-size: 2.5rem;
+    color: var(--color-gold);
+}
+
+h2 {
+    font-size: 2rem;
+    color: var(--color-gold);
+}
+
+nav, footer {
+    background-color: var(--color-brown);
+    color: var(--color-gold);
+}
+
+a {
+    color: var(--color-gold);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
