@@ -67,9 +67,18 @@ const Home = () => {
         <section style={styles.section}>
             <div style={styles.container}>
                 <h1 style={styles.title}>Bienvenidos a Estelar</h1>
-                <p style={styles.slogan}>"Un sorbo de calidez bajo un cielo infinito"</p>
-                {/* Imagen optimizada con prioridad alta */}
-                <img src={logo} alt="Slogan" style={styles.logo} fetchPriority="high" />
+                <p style={styles.slogan}>
+                    "Un sorbo de calidez bajo un cielo infinito"
+                </p>
+                {/* Imagen optimizada con srcset para diferentes tamaños */}
+                <img 
+                    src={logo} 
+                    srcSet="../assets/logo_slogan_small.webp 300w, ../assets/logo_slogan.webp 600w" 
+                    sizes="(max-width: 600px) 300px, 600px" 
+                    alt="Slogan" 
+                    style={styles.logo} 
+                    fetchPriority="high" 
+                />
                 <ul style={styles.contactList}>
                     <li style={styles.contactItem}>
                         <FaFacebook style={styles.icon} /> Café de grano Estelar
@@ -90,4 +99,3 @@ const Home = () => {
 };
 
 export default Home;
-
