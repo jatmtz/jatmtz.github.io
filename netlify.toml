@@ -1,0 +1,8 @@
+[build]
+  publish = "public"  # o la carpeta que contiene tu código final
+  command = "npm run build"  # o el comando que usas para generar tu aplicación
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Robots-Tag = "index, follow"  # Asegura que las páginas puedan ser indexadas
