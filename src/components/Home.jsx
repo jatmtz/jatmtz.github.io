@@ -42,8 +42,8 @@ const Home = () => {
             marginBottom: '20px',
         },
         logo: {
-            maxWidth: '300px',
-            height: 'auto',
+            widht: '300px',
+            height: '600px',
             marginBottom: '20px',
         },
         contactList: {
@@ -73,8 +73,7 @@ const Home = () => {
                 {/* Imagen optimizada con srcset para diferentes tamaños */}
                 <img 
                     src={logo} 
-                    srcSet="../assets/logo_slogan_small.webp 300w, ../assets/logo_slogan.webp 600w" 
-                    sizes="(max-width: 600px) 300px, 600px" 
+                    srcSet="../assets/logo_slogan.webp 300w, ../assets/logo_slogan.webp 600w" 
                     alt="Slogan" 
                     style={styles.logo} 
                     fetchPriority="high" 

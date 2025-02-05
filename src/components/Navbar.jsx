@@ -46,7 +46,7 @@ const Navbar = () => {
     return (
         <nav style={styles.navbar} aria-label="Menú de navegación principal">
             {/* Imagen del logo optimizada con prioridad alta */}
-            <img src={logo} alt="Estelar" style={{ height: '80px', width: 'auto', marginLeft: '3%' }} width="150" height="80" />
+            <img src={logo} alt="Estelar" style={{ height: '80px', width: '150px', marginLeft: '3%' }} width="150" height="80" />
             <ul style={styles.navList}>
                 {['Inicio', 'Nosotros', 'Tipos de Café', 'Contacto'].map((text, index) => (
                     <li key={index}>
