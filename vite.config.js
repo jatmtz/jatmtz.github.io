@@ -12,4 +12,15 @@ export default defineConfig({
   },
   plugins: [react()],
   base: './',
+  build: {
+    minify: 'terser', // Usa Terser para minimizar JS
+    sourcemap: false, // Desactiva mapas de fuente en producción
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: ['react', 'react-dom'], // Divide dependencias grandes
+        },
+      },
+    },
+  },
 })

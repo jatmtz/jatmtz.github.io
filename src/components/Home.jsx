@@ -1,79 +1,36 @@
-import { FaFacebook, FaInstagram, FaPhone, FaMapMarkerAlt } from 'react-icons/fa';
-import logo from '../assets/logo_slogan.webp';
+import { FaFacebook, FaInstagram, FaPhone, FaMapMarkerAlt } from "react-icons/fa";
+import logo from "../assets/logo_slogan.webp";
 
 const Home = () => {
-    const styles = {
-        section: {
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            justifyContent: 'center',
-            minHeight: '100vh',
-            color: '#D4AF37', // Texto dorado
-            textAlign: 'center',
-            padding: '16px',
-        },
-        container: {
-            backgroundColor: 'rgba(0, 0, 0, 0.5)', // Fondo negro semitransparente
-            padding: '32px',
-            borderRadius: '8px',
-            boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.5)',
-            maxWidth: '800px',
-            width: '100%',
-        },
-        title: {
-            fontSize: '3rem',
-            fontWeight: 'bold',
-            marginBottom: '16px',
-        },
-        slogan: {
-            fontSize: '1.5rem',
-            marginBottom: '20px',
-        },
-        logo: {
-            maxWidth: '300px',
-            marginBottom: '20px',
-        },
-        contactList: {
-            marginTop: '20px',
-            listStyle: 'none',
-            padding: 0,
-            textAlign: 'left',
-        },
-        contactItem: {
-            display: 'flex',
-            alignItems: 'center',
-            fontSize: '1.2rem',
-            marginBottom: '12px',
-        },
-        icon: {
-            marginRight: '10px',
-        },
-    };
-
-    return (
-        <section style={styles.section}>
-            <div style={styles.container}>
-                <h1 style={styles.title}>Bienvenidos a Estelar</h1>
-                <p style={styles.slogan}>"Un sorbo de calidez bajo un cielo infinito"</p>
-                <img src={logo} alt="Slogan" style={styles.logo} />
-                <ul style={styles.contactList}>
-                    <li style={styles.contactItem}>
-                        <FaFacebook style={styles.icon} /> Café de grano Estelar
-                    </li>
-                    <li style={styles.contactItem}>
-                        <FaInstagram style={styles.icon} /> @cafe_estelar
-                    </li>
-                    <li style={styles.contactItem}>
-                        <FaPhone style={styles.icon} /> 8713077441
-                    </li>
-                    <li style={styles.contactItem}>
-                        <FaMapMarkerAlt style={styles.icon} /> Calle Grano, #83, Mundo de Café, Torreón, Coahuila
-                    </li>
-                </ul>
-            </div>
-        </section>
-    );
+  return (
+    <section className="flex flex-col items-center justify-center min-h-screen text-center text-gold px-4">
+      <div className="bg-black/50 p-8 rounded-lg shadow-lg max-w-2xl w-full">
+        <h1 className="text-4xl font-bold mb-4">Bienvenidos a Estelar</h1>
+        <p className="text-xl mb-6">"Un sorbo de calidez bajo un cielo infinito"</p>
+        <img
+          src={logo}
+          alt="Logo de Estelar"
+          className="max-w-xs mx-auto mb-6"
+          loading="lazy"
+        />
+        <ul className="mt-4 space-y-3 text-left">
+          <li className="flex items-center text-lg">
+            <FaFacebook className="mr-3" aria-label="Facebook" /> Café de grano Estelar
+          </li>
+          <li className="flex items-center text-lg">
+            <FaInstagram className="mr-3" aria-label="Instagram" /> @cafe_estelar
+          </li>
+          <li className="flex items-center text-lg">
+            <FaPhone className="mr-3" aria-label="Teléfono" /> 8713077441
+          </li>
+          <li className="flex items-center text-lg">
+            <FaMapMarkerAlt className="mr-3" aria-label="Ubicación" /> Calle Grano, #83, Mundo de Café, Torreón, Coahuila
+          </li>
+        </ul>
+      </div>
+    </section>
+  );
 };
 
 export default Home;
+
